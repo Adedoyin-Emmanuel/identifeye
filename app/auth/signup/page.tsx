@@ -7,7 +7,9 @@ const Index = () => {
 
   return (
     <div>
-      <h1 className="font-bold text-3xl">Index works!</h1>
+      <h1 className="font-bold text-3xl text-primary">Index works!</h1>
+      <h1 className="font-bold text-3xl text-secondary">Index works!</h1>
+
       <p>Current pathname: {pathname}</p>
     </div>
   );
