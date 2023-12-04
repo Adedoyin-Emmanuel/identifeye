@@ -1,18 +1,47 @@
 "use client";
 import React from "react";
 import { useRouter, usePathname } from "next/navigation";
+import Text from "@/app/components/Text/Text";
+import Input from "@/app/components/Input/Input";
+import Button from "@/app/components/Button/Button";
 
-const Index = () => {
+const Signup = () => {
   const pathname = usePathname();
 
   return (
-    <div>
-      <h1 className="font-bold text-3xl text-primary">Index works!</h1>
-      <h1 className="font-bold text-3xl text-secondary">Index works!</h1>
+    <section className="w-screen h-screen flex items-center justify-center">
+      <form className="w-11/12 md:w-1/2 xl:w-1/4">
+        <section className="header-section my-8">
+          <h3 className="text-4xl capitalize font-bold text-secondary">
+            Login
+          </h3>
+          <Text className="py-1">create an account</Text>
+        </section>
 
-      <p>Current pathname: {pathname}</p>
-    </div>
+        <section className="my-4 mb-5">
+          <label htmlFor="email" className="text-md block my-2">
+            Email
+          </label>
+          <Input type="email" name="email" placeholder="Enter your email" />
+        </section>
+
+        <section className="my-4 mb-5">
+          <label htmlFor="username" className="text-md block my-2">
+            Username
+          </label>
+          <Input
+            type="text"
+            name="username"
+            placeholder="Enter your username"
+          />
+        </section>
+
+        <section className="my-4 mb-5 w-full">
+          <Button>create account</Button>
+        </section>
+      </form>
+    </section>
   );
 };
 
-export default Index;
+export default Signup;

@@ -16,7 +16,7 @@ const Input = ({
   return (
     <input
       ref={inputRef}
-      className="input border-2 border-gray-300 focus:outline-none rounded-md w-full h-16"
+      className="input border-2 border-gray-300 focus:border-secondary rounded-md w-full h-16 bg-primary"
       {...others}
       required={required}
     />

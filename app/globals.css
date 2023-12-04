@@ -13,6 +13,10 @@
   font-family: FiraCode !important;
 }
 
+.button-shadow{
+  box-shadow: -4px 4px 1px 0px #0F6;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
