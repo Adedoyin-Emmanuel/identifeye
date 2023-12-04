@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Text from "@/app/components/Text/Text";
 import Input from "@/app/components/Input/Input";
 import Button from "@/app/components/Button/Button";
 import Link from "next/link";
 
 const ForgotPassword = () => {
-  const pathname = usePathname();
+  const router = useRouter();
+
 
   return (
     <section className="w-screen h-screen flex items-center justify-center">

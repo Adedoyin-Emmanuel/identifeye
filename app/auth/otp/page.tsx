@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Text from "@/app/components/Text/Text";
 import Input from "@/app/components/Input/Input";
 import Button from "@/app/components/Button/Button";
 import Link from "next/link";
 
 const OTPPage = () => {
-  const pathname = usePathname();
+  const router = useRouter();
   const [otp, setOtp] = useState("");
 
   const handleOtpChange = (e: React.FormEvent<HTMLInputElement> | any) => {
