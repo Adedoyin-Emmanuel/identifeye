@@ -1,19 +1,29 @@
-
-"use client"
 import React from "react";
 
-interface IndexProps {
-    
+interface ButtonProps {
+  className?: string;
+  children: React.ReactNode;
+  disabled?: boolean;
+  onClick?: () => void;
 }
 
-const Index = ()=> {
+const Button = ({
+  className,
+  children,
+  disabled,
+  onClick,
+  ...others
+}: ButtonProps) => {
+  return (
+    <button
+      disabled={disabled}
+      onClick={onClick}
+      className={`capitalize text-white ${className} w-full rounded p-3 btn-secondary transition-colors `}
+      {...others}
+    >
+      {children}
+    </button>
+  );
+};
 
-    return (
-        <div>
-            <h1>Index works!</h1>
-        </div>
-    );  
-}
-
-export default Index;
-    
+export default Button;

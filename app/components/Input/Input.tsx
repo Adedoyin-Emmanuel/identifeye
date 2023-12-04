@@ -1,19 +1,26 @@
+"use client";
 
-"use client"
-import React from "react";
+import React, { MutableRefObject } from "react";
 
-interface IndexProps {
-    
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  className?: string;
+  inputRef?: MutableRefObject<HTMLInputElement | null>;
+  required?: boolean;
 }
+const Input = ({
+  className,
+  inputRef,
+  required = true,
+  ...others
+}: InputProps) => {
+  return (
+    <input
+      ref={inputRef}
+      className="input border-2 border-gray-300 focus:outline-none rounded-md w-full h-16"
+      {...others}
+      required={required}
+    />
+  );
+};
 
-const Index = ()=> {
-
-    return (
-        <div>
-            <h1>Index works!</h1>
-        </div>
-    );  
-}
-
-export default Index;
-    
+export default Input;
