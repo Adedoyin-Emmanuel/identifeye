@@ -54,18 +54,12 @@ const Signup = () => {
 
         <section>
           <Text className="inline">
-            no account?
+            got an account?
             <Link
               className="capitalize text-secondary px-1"
-              href={"/auth/signup"}
+              href={"/auth/login"}
             >
-              create account
-            </Link>
-            <Link
-              className="capitalize text-secondary px-1"
-              href={"/auth/forgot-password"}
-            >
-              Forgot Password
+              login
             </Link>
           </Text>
         </section>

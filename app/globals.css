@@ -9,12 +9,17 @@
   font-style: normal;
 }
 
-*, body {
+*,
+body {
   font-family: FiraCode !important;
 }
 
-.button-shadow{
-  box-shadow: -4px 4px 1px 0px #0F6;
+.button-shadow {
+  box-shadow: -4px 4px 1px 0px #0f6;
+}
+
+.button-shadow:hover {
+  box-shadow: -4px 2px 1px 0px #0f6;
 }
 
 :root {
@@ -30,6 +35,3 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-
-
