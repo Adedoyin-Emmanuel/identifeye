@@ -47,8 +47,8 @@ const Navbar: React.FC = (): JSX.Element => {
           <Image
             src={"/assets/logo.png"}
             alt="IdentifEye Logo"
-            width={40}
-            height={40}
+            width={35}
+            height={35}
           />
           <span className="md:block hidden">IdentifEye</span>
         </Link>
@@ -72,8 +72,8 @@ const Navbar: React.FC = (): JSX.Element => {
               <Image
                 src={"/assets/logo.png"}
                 alt="IdentifEye Logo"
-                width={40}
-                height={40}
+                width={35}
+                height={35}
               />
             </Link>
           </h2>
