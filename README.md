@@ -20,4 +20,13 @@ With IdentifEye  Our users would be able to run a genuine  KYC to all their cust
 
 2. Accuracy:
 
-3. Consistency: Financial institutions can use a uniform identification process to verify the identity of their users. This will limit false or incorrect information provided by their customers 
+3. Consistency: Financial institutions can use a uniform identification process to verify the identity of their users. This will limit false or incorrect information provided by their customers
+
+# Teams Members
+
+name | role
+--- | --- 
+Opemipo Oluwabiyi | Team Lead/Product Designer
+Toriola Oladeji | Product Designer
+Adedoyin Emmanuel | Frontend Developer
+Wachiou Bouraima | Backend Developer
