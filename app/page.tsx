@@ -7,15 +7,15 @@ export default function Home() {
   return (
     <main className="w-screen h-screen  bg-primary text-white overflow-x-hidden">
       <Navbar />
-      <div className="container mx-auto py-5 md:py-16 px-4 flex  lg:flex lg:items-start  lg:flex-row flex-col-reverse">
+      <div className="container mx-auto py-5 md:py-16 px-4 flex  lg:flex  lg:items-start  lg:flex-row flex-col-reverse">
         <div className="lg:w-1/2 lg:ml-12 mt-8 lg:mt-28">
           <h1 className="md:text-4xl text-3xl  font-bold capitalize mb-4">
-            Leveraging blockchain technology to provide DID
+            Revolutionizing Digital Identity
           </h1>
           <p className="py-5">
-            Discover the profound synergy of technology and empathy seamlessly
-            merging into a powerful force. Caresync stands as your unwavering
-            partner in your journey towards unparalleled health and well-being
+            Unlock a new era in digital identity with our groundbreaking project
+            that seamlessly merges the power of blockchain technology and
+            user-centric innovation.
           </p>
 
           <Link href={"/auth/signup"} className="block mt-10">
@@ -124,7 +124,9 @@ export default function Home() {
         </section>
       </section>
 
-      <section className="container mx-auto py-5 md:py-16 px-4  lg:flex lg:flex-col  lg:items-start mt-10"> </section>
+      <section className="container mx-auto py-5 md:py-16 px-4  lg:flex lg:flex-col  lg:items-start mt-10">
+        {" "}
+      </section>
     </main>
   );
 }
