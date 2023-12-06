@@ -62,7 +62,9 @@ const Navbar: React.FC = (): JSX.Element => {
             </Link>
           );
         })}
-        <Button className="w-32 h-15">Login</Button>
+        <section className="w-32">
+          <Button className="w-32 h-15">Login</Button>
+        </section>
       </section>
 
       <section className="md:hidden flex w-full flex-col">
