@@ -2,6 +2,8 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { FiGithub, FiTwitter, FiYoutube } from "react-icons/fi";
+import Image from "next/image";
+import Button from "../Button/Button";
 
 const Navbar: React.FC = (): JSX.Element => {
   const mobileLinksRef = useRef<HTMLElement>(null);
@@ -40,11 +42,19 @@ const Navbar: React.FC = (): JSX.Element => {
   ];
   return (
     <nav className="w-screen flex items-center md:justify-center justify-between md:flex-row flex-col  py-5 overflow-x-hidden z-10">
-      <h2 className="font-extrabold text-4xl text-secondary  mx-5 md:flex items-center  hidden cursor-pointer ">
-        <Link href="/">IdentifEye</Link>
+      <h2 className="font-extrabold text-2xl mx-5 md:flex items-center  hidden cursor-pointer ">
+        <Link href="/" className="flex items-center justify-center gap-x-4">
+          <Image
+            src={"/assets/logo.png"}
+            alt="IdentifEye Logo"
+            width={40}
+            height={40}
+          />
+          <span className="md:block hidden">IdentifEye</span>
+        </Link>
       </h2>
 
-      <section className="hidden md:flex items-end justify-end w-4/6 overflow-x-hidden space-x-6">
+      <section className="hidden md:flex items-center justify-end w-4/6 overflow-x-hidden space-x-6">
         {navItems.map((navItem, index) => {
           return (
             <Link href={navItem.link} key={index}>
@@ -52,12 +62,20 @@ const Navbar: React.FC = (): JSX.Element => {
             </Link>
           );
         })}
+        <Button className="w-32 h-15">Login</Button>
       </section>
 
       <section className="md:hidden flex w-full flex-col">
         <section className="header flex w-full items-center justify-between">
           <h2 className="font-extrabold text-secondary text-2xl  mx-5">
-            <Link href="/">Caresync</Link>
+            <Link href="/" className="flex">
+              <Image
+                src={"/assets/logo.png"}
+                alt="IdentifEye Logo"
+                width={40}
+                height={40}
+              />
+            </Link>
           </h2>
 
           <section

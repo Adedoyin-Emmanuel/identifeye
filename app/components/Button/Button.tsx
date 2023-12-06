@@ -18,7 +18,7 @@ const Button = ({
     <button
       disabled={disabled}
       onClick={onClick}
-      className={`capitalize rounded-none text-white ${className} w-full  p-3 btn-secondary button-shadow bg-accent transition-all duration-150 ease-linear`}
+      className={`capitalize rounded text-white ${className} w-full  p-3 btn-secondary button-shadow bg-accent transition-all duration-150 ease-linear`}
       {...others}
     >
       {children}
