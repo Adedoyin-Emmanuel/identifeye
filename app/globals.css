@@ -22,8 +22,25 @@ body {
   box-shadow: -4px 2px 1px 0px #0f6;
 }
 
-.homepage-gradient{
-  background: radial-gradient(100.31% 82.64% at 80.14% 23.05%, rgba(209, 242, 6, 0.20) 2.21%, rgba(209, 242, 6, 0.20) 19.04%, rgba(66, 104, 18, 0.00) 63.98%), conic-gradient(from 156deg at 46.04% 10.91%, rgba(0, 255, 102, 0.30) 143.87834787368774deg, rgba(1, 249, 100, 0.00) 271.8749928474426deg);
+.button-shadow-2 {
+  border-radius: 8px;
+  border: 2px solid #f4f4f4;
+  background: var(--Primary-green, #0f6);
+  box-shadow: -4px 4px 1px 0px #f4f4f4;
+  color: #000;
+}
+.homepage-gradient {
+  background: radial-gradient(
+      100.31% 82.64% at 80.14% 23.05%,
+      rgba(209, 242, 6, 0.2) 2.21%,
+      rgba(209, 242, 6, 0.2) 19.04%,
+      rgba(66, 104, 18, 0) 63.98%
+    ),
+    conic-gradient(
+      from 156deg at 46.04% 10.91%,
+      rgba(0, 255, 102, 0.3) 143.87834787368774deg,
+      rgba(1, 249, 100, 0) 271.8749928474426deg
+    );
 }
 
 :root {
