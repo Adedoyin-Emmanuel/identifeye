@@ -19,7 +19,11 @@ body {
 }
 
 .button-shadow:hover {
-  box-shadow: -4px 2px 1px 0px #0f6;
+  border-radius: 8px;
+  border: 2px solid #f4f4f4;
+  background: var(--Primary-green, #0f6);
+  box-shadow: -4px 4px 1px 0px #f4f4f4;
+  color: #000;
 }
 
 .button-shadow-2 {
