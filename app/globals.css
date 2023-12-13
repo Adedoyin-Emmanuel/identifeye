@@ -35,7 +35,7 @@ body {
 }
 
 .button-shadow-2:hover {
-  background: var(--Primary-green, #f4f4f4);
+  background: var(--Primary-green, #b0adad);
   box-shadow: -4px 4px 1px 0px #0f6;
 }
 .homepage-gradient {

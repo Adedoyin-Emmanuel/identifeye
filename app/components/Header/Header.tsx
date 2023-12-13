@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Header = (): JSX.Element => {
   return (
-    <nav className="w-screen flex items-center flex-row justify-between  py-5 overflow-x-hidden z-10">
+    <nav className="w-full flex items-center flex-row justify-between  py-5 overflow-x-hidden z-10">
       <h2 className="font-extrabold text-2xl mx-5 flex items-center cursor-pointer ">
         <Link href="/" className="flex items-center justify-center gap-x-4">
           <Image
