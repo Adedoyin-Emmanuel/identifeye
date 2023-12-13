@@ -33,7 +33,7 @@ const Modal = forwardRef<ModalRef, ModalProps>(
         className={`modal ${className}`}
         open={isOpen}
       >
-        <div className="modal-box border-secondary border-[1px]">
+        <div className="modal-box box-shadow">
           <form method="dialog" className="modal-backdrop">
             <button
               onClick={closeModal}
