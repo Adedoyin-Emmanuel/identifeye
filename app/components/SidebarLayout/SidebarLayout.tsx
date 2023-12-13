@@ -32,12 +32,7 @@ const SidebarLayout = ({
       <div
         className={`border-r-2 border-secondary  h-screen hidden md:flex md:w-3/12  lg:w-2/12 items-center justify-start flex-col  p-0  fixed ${className} `}
       >
-        <section className="sidebar-header my-4 w-11/12 p-2">
-          <h2 className="font-bold text-[20px] capitalize flex items-center">
-            IfentifEye
-            <span></span>
-          </h2>
-        </section>
+        <section className="sidebar-header my-4 w-11/12 p-2"></section>
 
         <section className="w-11/12 p-2">
           <Link
