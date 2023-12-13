@@ -15,6 +15,10 @@ const Login = () => {
     if (showSuccessModalRef && showSuccessModalRef.current) {
       showSuccessModalRef.current.showModal();
     }
+
+    setTimeout(() => {
+      router.push("/user/dashboard");
+    }, 2000);
   };
 
   return (
