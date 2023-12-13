@@ -30,7 +30,7 @@ const SidebarLayout = ({
   return (
     <section className="parent h-screen w-screen flex justify-between">
       <div
-        className={`border-r-2 border-secondary  h-screen hidden md:flex md:w-3/12  lg:w-2/12 items-center justify-start flex-col  p-0  fixed ${className} `}
+        className={`border-r-2 border-[#0f6]  h-screen hidden md:flex md:w-3/12  lg:w-2/12 items-center justify-start flex-col  p-0  fixed ${className} `}
       >
         <section className="sidebar-header my-4 w-11/12 p-2"></section>
 

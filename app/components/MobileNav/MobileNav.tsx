@@ -17,7 +17,7 @@ const MobileNav = ({ className, children, ...others }: MobileNavProps) => {
   const currentPath = usePathname();
   return (
     <section
-      className={`w-screen flex items-center justify-between fixed bottom-0 left-0 md:hidden   h-20 z-10 p-2 ${className}`}
+      className={`bg-primary w-screen flex items-center justify-between fixed bottom-0 left-0 md:hidden   h-20 z-10 p-2 ${className}`}
       {...others}
     >
       {children}

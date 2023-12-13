@@ -14,7 +14,8 @@ body {
   font-family: FiraCode !important;
 }
 
-.button-shadow {
+.button-shadow,
+.box-shadow {
   box-shadow: -4px 4px 1px 0px #0f6;
 }
 
