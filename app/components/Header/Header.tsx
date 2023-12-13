@@ -1,12 +1,30 @@
 "use client";
-import React from "react";
+import Link from "next/link";
+import { FaRegBell } from "react-icons/fa";
 
-interface HeaderProps {}
+import Image from "next/image";
 
-const Header = () => {
+const Header = (): JSX.Element => {
   return (
-    <nav className="w-screen flex items-center md:justify-center justify-between md:flex-row flex-col  py-5 overflow-x-hidden z-10">
-      <h1>Index works!</h1>
+    <nav className="w-screen flex items-center flex-row justify-between  py-5 overflow-x-hidden z-10">
+      <h2 className="font-extrabold text-2xl mx-5 flex items-center cursor-pointer ">
+        <Link href="/" className="flex items-center justify-center gap-x-4">
+          <Image
+            src={"/assets/logo.png"}
+            alt="IdentifEye Logo"
+            width={35}
+            height={35}
+          />
+          <span className="md:block hidden">IdentifEye</span>
+        </Link>
+      </h2>
+
+      <section className="flex items-center justify-end w-4/6 overflow-x-hidden space-x-6 p-1">
+        <FaRegBell className="w-7 h-7 cursor-pointer" />
+        <section className="name bg-accent rounded-full w-10 h-10 flex items-center justify-center font-bold text-primary cursor-pointer">
+          TA
+        </section>
+      </section>
     </nav>
   );
 };
