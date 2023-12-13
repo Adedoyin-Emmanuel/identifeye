@@ -33,6 +33,11 @@ body {
   box-shadow: -4px 4px 1px 0px #f4f4f4;
   color: #000;
 }
+
+.button-shadow-2:hover {
+  background: var(--Primary-green, #f4f4f4);
+  box-shadow: -4px 4px 1px 0px #0f6;
+}
 .homepage-gradient {
   background: radial-gradient(
       100.31% 82.64% at 80.14% 23.05%,

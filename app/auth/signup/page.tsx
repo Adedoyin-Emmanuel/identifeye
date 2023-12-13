@@ -5,6 +5,7 @@ import Input from "@/app/components/Input/Input";
 import Button from "@/app/components/Button/Button";
 import Modal from "@/app/components/Modal/Modal";
 import Text from "@/app/components/Text/Text";
+import Link from "next/link";
 
 const Signup = () => {
   const router = useRouter();
@@ -22,8 +23,8 @@ const Signup = () => {
         <section>
           <div className="success-icon flex items-center justify-center">
             <svg
-              width="180"
-              height="180"
+              width="130"
+              height="130"
               viewBox="0 0 209 208"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +97,18 @@ const Signup = () => {
                 Generate DID
               </Button>
             </section>
+
+            <section>
+              <Text className="inline">
+                have an account?
+                <Link
+                  className="capitalize text-secondary px-1"
+                  href={"/auth/login"}
+                >
+                  login
+                </Link>
+              </Text>
+            </section>
           </div>
 
           <input
@@ -139,6 +152,18 @@ const Signup = () => {
               >
                 Generate DID
               </Button>
+            </section>
+
+            <section>
+              <Text className="inline">
+                have an account?
+                <Link
+                  className="capitalize text-secondary px-1"
+                  href={"/auth/login"}
+                >
+                  login
+                </Link>
+              </Text>
             </section>
           </div>
         </div>

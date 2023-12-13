@@ -37,7 +37,7 @@ const Modal = forwardRef<ModalRef, ModalProps>(
           <form method="dialog" className="modal-backdrop">
             <button
               onClick={closeModal}
-              className="btn btn-sm btn-circle shadow-none border-none outline-none bg-red-400  hover:bg-gray-100 hover-text-danger duration-100 transition-colors ease-linear absolute right-2 top-2"
+              className="btn btn-sm btn-circle shadow-none border-none outline-none bg-red-400  hover:bg-red-400 absolute right-2 top-2"
             >
               ✕
             </button>
