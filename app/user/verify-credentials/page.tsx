@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <div className="w-screen h-screen">
       <SidebarLayout>
-        <h3 className="text-3xl font-bold">hello dashboard</h3>
+        <h3 className="text-3xl font-bold">hello verify credentials</h3>
       </SidebarLayout>
     </div>
   );
